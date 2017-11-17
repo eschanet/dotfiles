@@ -155,3 +155,6 @@ alias path='echo -e ${PATH//:/\\n}'
 
 #tmux open main session when typing 'tmuxa'
 alias tmuxa='tmux a -t main'
+
+#Atlas voms proxy is a long command...
+alias proxy='voms-proxy-init -voms atlas'
