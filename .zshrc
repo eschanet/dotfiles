@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #setting default user to hide it when not logging in as someone different or to another machine
-DEFAULT_USER=Eric.Schanet
+DEFAULT_USER=`whoami`
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
