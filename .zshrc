@@ -29,7 +29,7 @@ esac
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
 ZSH_THEME="agnoster"
-
+DEFAULT_USER=`whoami`
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -112,8 +112,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#setting default user to hide it when not logging in as someone different or to another machine
-DEFAULT_USER=`whoami`
+# redefine prompt_context for hiding user@hostname
+prompt_context () { }
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
