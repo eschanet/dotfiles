@@ -117,6 +117,13 @@ prompt_context () { }
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
+for file in ~/.{path,exports,aliases}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+
+
 if [ -d /etc/profile.d ]; then
   for i in /etc/profile.d/*.sh; do
     if [ -r $i ]; then
