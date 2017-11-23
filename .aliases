@@ -157,4 +157,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias tmuxa='tmux a -t main'
 
 #Atlas voms proxy is a long command...
-alias proxy='voms-proxy-init -voms atlas'
+alias voms='voms-proxy-init -voms atlas'
+
+#program aliases
+alias ev='evince'
+alias ok='okular'
