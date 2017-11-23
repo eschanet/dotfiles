@@ -120,7 +120,7 @@ prompt_context () { }
 source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
 
 #define all the necessary env variables as well as aliases
-for file in ~/.{path,exports,aliases}; do
+for file in ~/.{path,exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -137,3 +137,5 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+
+. ~/dotfiles/z.sh
