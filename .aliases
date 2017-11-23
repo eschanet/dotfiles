@@ -159,6 +159,13 @@ alias tmuxa='tmux a -t main'
 #Atlas voms proxy is a long command...
 alias voms='voms-proxy-init -voms atlas'
 
+#Setup ATLAS
+alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
+
+alias setupGrid='source ${SETUPSCRIPTS}/setupGrid.sh'
+alias startUp='source ${SETUPSCRIPTS}/startUp.sh'
+alias work='/project/etp5/eschanet/'
+
 #program aliases
 alias ev='evince'
 alias ok='okular'

@@ -117,12 +117,17 @@ prompt_context () { }
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
+source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+
+#define all the necessary env variables as well as aliases
 for file in ~/.{path,exports,aliases}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
-
+#BASE16 colors
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 if [ -d /etc/profile.d ]; then
   for i in /etc/profile.d/*.sh; do
