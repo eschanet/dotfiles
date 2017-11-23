@@ -1,6 +1,3 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -49,29 +46,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 #slc5
 source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
-
-#setupATLAS
-export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
-alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
-
-#useful paths
-alias work='/project/etp5/eschanet/'
-
-#SetupScripts
-export SETUPSCRIPTS=/project/etp5/eschanet/scripts/setupScripts
-alias setupGrid='source ${SETUPSCRIPTS}/setupGrid.sh'
-alias startUp='source ${SETUPSCRIPTS}/startUp.sh'
-
-#Bash slide creator scripts
-export PATH=$PATH:/project/etp5/eschanet/scripts/bash
-
-#TutorialData
-export ALRB_TutorialData=/project/etp5/eschanet/ROOTAnalysisTutorial/MyAnalysis/share/
-
-#PythonPath
-export PYTHONPATH="${PYTHONPATH}:/project/etp5/eschanet/packages"
-export PYTHONPATH=/project/etp5/eschanet/scripts/MPF/pythonpath:$PYTHONPATH
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 #base16 colors
 BASE16_SHELL=$HOME/.config/base16-shell/
