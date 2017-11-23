@@ -17,6 +17,7 @@ export ALRB_TutorialData=/project/etp5/eschanet/ROOTAnalysisTutorial/MyAnalysis/
 
 #PythonPath
 export PYTHONPATH="${PYTHONPATH}:/project/etp5/eschanet/packages"
+export PYTHONPATH="${PYTHONPATH}:/project/etp5/eschanet/scripts/python"¬
 export PYTHONPATH=/project/etp5/eschanet/scripts/MPF/pythonpath:$PYTHONPATH
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
