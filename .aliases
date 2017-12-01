@@ -169,3 +169,6 @@ alias work='/project/etp5/eschanet/'
 #program aliases
 alias ev='evince'
 alias ok='okular'
+
+#root sucks without option -l
+alias root='root -l'

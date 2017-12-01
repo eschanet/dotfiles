@@ -11,15 +11,17 @@ export SETUPSCRIPTS=/project/etp5/eschanet/scripts/setupScripts
 
 #Bash slide creator scripts
 export PATH=$PATH:/project/etp5/eschanet/scripts/bash
+export PATH=$PATH:/project/etp5/eschanet/scripts/python
+
 
 #TutorialData
 export ALRB_TutorialData=/project/etp5/eschanet/ROOTAnalysisTutorial/MyAnalysis/share/
 
 #PythonPath
 export PYTHONPATH="${PYTHONPATH}:/project/etp5/eschanet/packages"
-export PYTHONPATH="${PYTHONPATH}:/project/etp5/eschanet/scripts/python/"¬
-export PYTHONPATH=/project/etp5/eschanet/scripts/MPF/pythonpath:$PYTHONPATH
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+export PYTHONPATH="/project/etp5/eschanet/scripts/python:${PYTHONPATH}"¬
+export PYTHONPATH="/project/etp5/eschanet/scripts/MPF/pythonpath:${PYTHONPATH}"
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages:${PYTHONPATH}"
 
 # Make vim the default editor.
 export EDITOR='vim';
@@ -57,3 +59,6 @@ export GPG_TTY=$(tty);
 #most frequent working directories
 export E4="/project/etp4/eschanet/1L/"
 export E5="/project/etp5/eschanet/"
+
+
+
