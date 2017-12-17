@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+[ -r ~/.checkOS ] && [ -f ~/.checkOS ] && source ~/.checkOS;
+
 # Path to your oh-my-zsh installation.
 case "$(uname -s)" in
 
@@ -117,13 +119,26 @@ prompt_context () { }
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
-source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
-
 #define all the necessary env variables as well as aliases
-for file in ~/.{path,exports,aliases,functions}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+if [[ "$LINUX" == "1" ]]
+then
+	for file in ~/.{path,exports,aliases,functions}; do
+		[ -r "$file" ] && [ -f "$file" ] && source "$file";
+	done;
+	unset file;
+elif [[ "$OSX" == "1" ]]
+then
+  for file in ~/.{path,exports,aliases,functions}; do
+		[ -r "$file" ] && [ -f "$file" ] && source "$file";
+	done;
+	unset file;
+fi
+
+#SLC6 for work station gar-ws-etp06
+if [[ "$LINUX" == "1" ]]
+then
+	source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+fi
 
 #BASE16 colors
 BASE16_SHELL=$HOME/.config/base16-shell/
