@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+setxkbmap -option caps:ctrl_modifier
+
 # Path to your oh-my-zsh installation.
 case "$(uname -s)" in
 
@@ -113,7 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # redefine prompt_context for hiding user@hostname
-prompt_context () { }
+#prompt_context () { }
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 

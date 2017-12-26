@@ -18,7 +18,11 @@ export PATH=$PATH:/project/etp5/eschanet/scripts/python
 export ALRB_TutorialData=/project/etp5/eschanet/ROOTAnalysisTutorial/MyAnalysis/share/
 
 #PythonPath
-export PYTHONPATH="${PYTHONPATH}:/project/etp5/eschanet/packages"
+export PYTHONPATH="/project/etp5/eschanet/scripts:${PYTHONPATH}"
+export PYTHONPATH="/project/etp5/eschanet/packages:${PYTHONPATH}"
+export PYTHONPATH="/project/etp5/eschanet/packages/meme:${PYTHONPATH}"
+export PYTHONPATH="/project/etp5/eschanet/packages/memoizePickle:${PYTHONPATH}"¬
+export PYTHONPATH="/project/etp5/eschanet/scripts/gupf:${PYTHONPATH}"¬
 export PYTHONPATH="/project/etp5/eschanet/scripts/python:${PYTHONPATH}"¬
 export PYTHONPATH="/project/etp5/eschanet/scripts/MPF/pythonpath:${PYTHONPATH}"
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:${PYTHONPATH}"
