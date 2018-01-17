@@ -21,3 +21,13 @@ then
         export GNU_USERLAND=1
     fi
 fi
+
+if [[ "$LINUX" == 1 ]]
+then
+		if grep -qF "Scientific Linux CERN SLC" /etc/*release
+		then
+  		export dist_info='slc'	
+		else
+  		export dist_info='linux'
+		fi
+fi

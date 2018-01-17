@@ -155,4 +155,13 @@ if [ -d /etc/profile.d ]; then
   unset i
 fi
 
+if [[ "$dist_info" == 'slc' ]]
+then
+		if [ -n "$ZSH_VERSION" ]
+		then
+				PROMPT=$(awk '!x{x=sub(" "," %{$fg_bold[white]%}(${dist_info}) ")}7' <<< $PROMPT)
+		fi
+fi
+
+
 . ~/dotfiles/z.sh
