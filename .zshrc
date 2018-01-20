@@ -13,7 +13,7 @@ case "$(uname -s)" in
      ;;
 
    Linux)
-     if [[ "$LXPLUS" == "1" ]]
+     if [[ "$LXPLUS" == "0" ]]
      then
        export ZSH=/home/e/Eric.Schanet/.oh-my-zsh
      else
