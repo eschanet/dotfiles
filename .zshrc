@@ -24,7 +24,7 @@ case "$(uname -s)" in
    # See correspondence table at the bottom of this answer
 
    *)
-     echo 'other OS' 
+     echo 'other OS'
      ;;
 esac
 
@@ -140,6 +140,13 @@ fi
 if [[ "$LINUX" == "1" ]]
 then
 	source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+  if [[ "$dist_info" == 'slc' ]]
+  then
+  		if [ -n "$ZSH_VERSION" ]
+  		then
+  				PROMPT=$(awk '!x{x=sub(" "," %{$fg_bold[white]%}(${dist_info}) ")}7' <<< $PROMPT)
+  		fi
+  fi
 fi
 
 #BASE16 colors
@@ -154,14 +161,5 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
-
-if [[ "$dist_info" == 'slc' ]]
-then
-		if [ -n "$ZSH_VERSION" ]
-		then
-				PROMPT=$(awk '!x{x=sub(" "," %{$fg_bold[white]%}(${dist_info}) ")}7' <<< $PROMPT)
-		fi
-fi
-
 
 . ~/dotfiles/z.sh

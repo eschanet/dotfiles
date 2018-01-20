@@ -22,11 +22,17 @@ then
     fi
 fi
 
+if [ $HOSTNAME == *"lxplus"* ]; then
+        export LXPLUS=1
+else
+        export LXPLUS=0
+fi
+
 if [[ "$LINUX" == 1 ]]
 then
 		if grep -qF "Scientific Linux CERN SLC" /etc/*release
 		then
-  		export dist_info='slc'	
+  		export dist_info='slc'
 		else
   		export dist_info='linux'
 		fi
