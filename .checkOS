@@ -22,7 +22,7 @@ then
     fi
 fi
 
-if [ $HOSTNAME == *"lxplus"* ]; then
+if [[ $HOSTNAME == *"lxplus"* ]]; then
         export LXPLUS=1
 else
         export LXPLUS=0
