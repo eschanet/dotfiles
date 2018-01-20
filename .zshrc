@@ -139,7 +139,7 @@ fi
 #SLC6 for work station gar-ws-etp06
 if [[ "$LINUX" == "1" ]]
 then
-  if [[ "$LXPLUS" == "1" ]]
+  if [[ "$LXPLUS" == "0" ]]
   then
     source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
   fi

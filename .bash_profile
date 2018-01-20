@@ -45,7 +45,7 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 #slc5
-if [[ "$LXPLUS" == "1" ]]
+if [[ "$LXPLUS" == "0" ]]
 then
 	source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
 fi
