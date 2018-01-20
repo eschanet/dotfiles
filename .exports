@@ -13,6 +13,9 @@ export SETUPSCRIPTS=/project/etp5/eschanet/scripts/setupScripts
 export PATH=$PATH:/project/etp5/eschanet/scripts/bash
 export PATH=$PATH:/project/etp5/eschanet/scripts/python
 
+#tutorial jan18
+export ALRB_TutorialData=/afs/cern.ch/atlas/project/PAT/tutorial/cern-jan2018
+
 #PythonPath
 export PYTHONPATH="/project/etp5/eschanet/scripts:${PYTHONPATH}"
 export PYTHONPATH="/project/etp5/eschanet/packages:${PYTHONPATH}"
