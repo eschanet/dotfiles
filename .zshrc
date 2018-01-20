@@ -13,7 +13,13 @@ case "$(uname -s)" in
      ;;
 
    Linux)
-     export ZSH=/home/e/Eric.Schanet/.oh-my-zsh
+     if [[ "$LXPLUS" == "1" ]]
+     then
+       export ZSH=/home/e/Eric.Schanet/.oh-my-zsh
+     else
+       export ZSH=/afs/cern.ch/user/e/eschanet/.oh-my-zsh
+     fi
+
      ;;
 
    CYGWIN*|MINGW32*|MSYS*)
