@@ -13,10 +13,6 @@ export SETUPSCRIPTS=/project/etp5/eschanet/scripts/setupScripts
 export PATH=$PATH:/project/etp5/eschanet/scripts/bash
 export PATH=$PATH:/project/etp5/eschanet/scripts/python
 
-
-#TutorialData
-export ALRB_TutorialData=/project/etp5/eschanet/ROOTAnalysisTutorial/MyAnalysis/share/
-
 #PythonPath
 export PYTHONPATH="/project/etp5/eschanet/scripts:${PYTHONPATH}"
 export PYTHONPATH="/project/etp5/eschanet/packages:${PYTHONPATH}"
@@ -63,6 +59,3 @@ export GPG_TTY=$(tty);
 #most frequent working directories
 export E4="/project/etp4/eschanet/1L/"
 export E5="/project/etp5/eschanet/"
-
-
-
