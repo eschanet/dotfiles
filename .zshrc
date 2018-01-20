@@ -139,7 +139,10 @@ fi
 #SLC6 for work station gar-ws-etp06
 if [[ "$LINUX" == "1" ]]
 then
-	source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+  if [[ "$LXPLUS" == "1" ]]
+  then
+    source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+  fi
   if [[ "$dist_info" == 'slc' ]]
   then
   		if [ -n "$ZSH_VERSION" ]

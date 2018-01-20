@@ -45,7 +45,10 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 #slc5
-source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+if [[ "$LXPLUS" == "1" ]]
+then
+	source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+fi
 
 #base16 colors
 BASE16_SHELL=$HOME/.config/base16-shell/
