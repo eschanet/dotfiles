@@ -15,7 +15,7 @@ export PATH=$PATH:/project/etp5/eschanet/scripts/python
 
 #tutorial jan18
 export ALRB_TutorialData=/afs/cern.ch/atlas/project/PAT/tutorial/cern-jan2018
-
+export RUCIO_ACCOUNT=eschanet
 #PythonPath
 export PYTHONPATH="/project/etp5/eschanet/scripts:${PYTHONPATH}"
 export PYTHONPATH="/project/etp5/eschanet/packages:${PYTHONPATH}"
