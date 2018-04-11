@@ -7,23 +7,23 @@ export PATH="$HOME/bin:$PATH";
 export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 
 #setup scripts
-export SETUPSCRIPTS=/project/etp5/eschanet/scripts/setupScripts
+export SETUPSCRIPTS=~/ma/scripts/setupScripts
 
 #Bash slide creator scripts
-export PATH=$PATH:/project/etp5/eschanet/scripts/bash
-export PATH=$PATH:/project/etp5/eschanet/scripts/python
+export PATH=$PATH:~/ma/scripts/bash
+export PATH=$PATH:~/ma/scripts/python
 
 #tutorial jan18
 export ALRB_TutorialData=/afs/cern.ch/atlas/project/PAT/tutorial/cern-jan2018
 export RUCIO_ACCOUNT=eschanet
 #PythonPath
-export PYTHONPATH="/project/etp5/eschanet/scripts:${PYTHONPATH}"
-export PYTHONPATH="/project/etp5/eschanet/packages:${PYTHONPATH}"
-export PYTHONPATH="/project/etp5/eschanet/packages/meme:${PYTHONPATH}"
-export PYTHONPATH="/project/etp5/eschanet/packages/memoizePickle:${PYTHONPATH}"¬
-export PYTHONPATH="/project/etp5/eschanet/scripts/gupf:${PYTHONPATH}"¬
-export PYTHONPATH="/project/etp5/eschanet/scripts/python:${PYTHONPATH}"¬
-export PYTHONPATH="/project/etp5/eschanet/scripts/MPF/pythonpath:${PYTHONPATH}"
+export PYTHONPATH="~/ma/scripts:${PYTHONPATH}"
+export PYTHONPATH="~/ma/packages:${PYTHONPATH}"
+export PYTHONPATH="~/ma/packages/meme:${PYTHONPATH}"
+export PYTHONPATH="~/ma/packages/memoizePickle:${PYTHONPATH}"¬
+export PYTHONPATH="~/ma/scripts/gupf:${PYTHONPATH}"¬
+export PYTHONPATH="~/ma/scripts/python:${PYTHONPATH}"¬
+export PYTHONPATH="~/ma/scripts/MPF/pythonpath:${PYTHONPATH}"
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:${PYTHONPATH}"
 
 # Make vim the default editor.
