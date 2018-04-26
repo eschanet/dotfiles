@@ -173,3 +173,6 @@ alias ok='okular'
 
 #root sucks without option -l
 alias root='root -l'
+
+#slc6 environment should setupATLAS
+#alias slc6='slc6 && setupATLAS'
