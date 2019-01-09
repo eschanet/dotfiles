@@ -2,7 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
-setxkbmap -option caps:ctrl_modifier
 [ -r ~/.checkOS ] && [ -f ~/.checkOS ] && source ~/.checkOS;
 
 # Path to your oh-my-zsh installation.
@@ -89,7 +88,7 @@ DEFAULT_USER=`whoami`
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git,Z)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -172,3 +171,16 @@ if [ -d /etc/profile.d ]; then
 fi
 
 . ~/dotfiles/z.sh
+
+# weird z.sh bug: https://github.com/robbyrussell/oh-my-zsh/issues/7094
+if [ "$_Z_NO_RESOLVE_SYMLINKS" ]; then
+    _z_precmd() {
+        (_z --add "${PWD:a}" &)
+        : $RANDOM
+    }
+else
+    _z_precmd() {
+        (_z --add "${PWD:A}" &)
+        : $RANDOM
+    }
+fi

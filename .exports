@@ -10,24 +10,32 @@ export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 export SETUPSCRIPTS=~/ma/scripts/setupScripts
 
 #Bash slide creator scripts
+export PATH=~/ma/packages/pandamonium:$PATH
+export PATH=~/ma/packages/slurmy:$PATH
 export PATH=$PATH:~/ma/scripts/bash
 export PATH=$PATH:~/ma/scripts/python
 #export PATH=/project/etp5/eschanet/packages/miniconda3/bin:$PATH
+export PATH=/home/e/Eric.Schanet/ma/packages/ahoi/scripts:$PATH
+export PATH=/home/e/Eric.Schanet/ma/packages/pfPlotter:$PATH
+export PATH=/home/e/Eric.Schanet/ma/packages/machete/python:$PATH
 
 #rucio account
 export RUCIO_ACCOUNT=eschanet
 
 #PythonPath
-export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts:${PYTHONPATH}
-export PYTHONPATH=/home/e/Eric.Schanet/ma/packages:${PYTHONPATH}
-export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/meme:${PYTHONPATH}
-export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/memoizePickle:${PYTHONPATH}¬
-export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/gupf:${PYTHONPATH}¬
-export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/python:${PYTHONPATH}¬
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
+export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/python:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/packages:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/meme:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/memoizePickle:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/gupf:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/python:$PYTHONPATH
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/MPF/pythonpath:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/studies/ml/KerasROOTClassification:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/machete/python:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/ahoi/python:$PYTHONPATH
 
-# Make vim the default editor.
+#Make vim the default editor.
 export EDITOR='vim';
 
 # Enable persistent REPL history for `node`.
@@ -63,3 +71,5 @@ export GPG_TTY=$(tty);
 #most frequent working directories
 export E4="/project/etp4/eschanet/1L/"
 export E5="/project/etp5/eschanet/"
+
+export _Z_CMD="f"
