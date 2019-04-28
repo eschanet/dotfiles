@@ -187,3 +187,9 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+	# Set in ~/.gitconfig_local
+
+[include]
+	path = ~/.gitconfig_local

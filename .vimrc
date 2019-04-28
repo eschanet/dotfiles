@@ -1,3 +1,15 @@
+"set t_Co=256                        " force vim to use 256 colors
+"let g:solarized_termcolors=256      " use solarized 256 fallback
+
+
+" Style stuff
+"syntax enable
+"set background=light
+"colorscheme solarized
+
+"colorscheme evening
+syntax enable
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -111,3 +123,15 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
+"during insert, kj escapes, `^ is so that the cursor doesn't move
+inoremap kj <Esc>`^
+"during insert, lkj escapes and saves
+inoremap lkj <Esc>`^:w<CR>
+"during insert, lkj escapes and saves and QUITS
+inoremap ;lkj <Esc>:wq<CR>
+
+
+" Fix the difficult-to-read default setting for diff text highlighting.  The
+" bang (!) is required since we are overwriting the DiffText setting. The highlighting
+" for "Todo" also looks nice (yellow) if you don't like the "MatchParen" colors.
+"highlight! link DiffText MatchParen

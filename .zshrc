@@ -88,7 +88,7 @@ DEFAULT_USER=`whoami`
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git,Z)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -170,4 +170,21 @@ if [ -d /etc/profile.d ]; then
   unset i
 fi
 
+
+# Different autocompletion order for cd (by inverse modification date)
+zstyle ':completion:*:cd:*' file-sort modification
+
 . ~/dotfiles/z.sh
+
+# weird z.sh bug: https://github.com/robbyrussell/oh-my-zsh/issues/7094
+if [ "$_Z_NO_RESOLVE_SYMLINKS" ]; then
+    _z_precmd() {
+        (_z --add "${PWD:a}" &)
+        : $RANDOM
+    }
+else
+    _z_precmd() {
+        (_z --add "${PWD:A}" &)
+        : $RANDOM
+    }
+fi

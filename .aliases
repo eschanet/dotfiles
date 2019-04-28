@@ -7,6 +7,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias cd-="cd -"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
@@ -14,7 +15,10 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
-alias e4="cd /project/etp4/eschanet/1L/"
+alias e1="cd /project/etp1/eschanet/"
+alias e2="cd /project/etp2/eschanet/"
+alias e3="cd /project/etp3/eschanet/"
+alias e4="cd /project/etp4/eschanet/"
 alias e5="cd /project/etp5/eschanet/"
 alias e6="cd /project/etp6/eschanet/"
 
@@ -38,6 +42,9 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
+
+# Get real path of file
+alias rp="readlink -m"
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
@@ -154,10 +161,15 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 #tmux open main session when typing 'tmuxa'
-alias tmuxa='tmux a -t main'
+alias tmux='tmux -2'
+alias tmuxa='tmux -2 a -t main'
+alias tmuxs='tmux -2 a -t ssh'
 
 #Atlas voms proxy is a long command...
-alias voms='voms-proxy-init -voms atlas'
+alias voms='voms-proxy-init -voms atlas -valid 72:00'
+alias vomsprod='voms-proxy-init -voms atlas:/atlas/phys-susy/Role=production -valid 72:00'
+
+#alias root='root/6.10.08'
 
 #Setup ATLAS
 alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
@@ -169,6 +181,12 @@ alias work='/project/etp5/eschanet/'
 #program aliases
 alias ev='evince'
 alias ok='okular'
-
+alias a='atom'
 #root sucks without option -l
 alias root='root -l'
+
+#slc6 environment should setupATLAS ... not yet working ..
+#alias slc6='slc6 && setupATLAS'
+
+#kill suspended jobs
+alias meh='kill $(jobs -l | grep suspended | cut -d'"'"' '"'"' -f4)'

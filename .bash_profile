@@ -1,3 +1,10 @@
+#I want zsh
+#if [[ $- == *i* ]]
+#then
+#    exec /bin/zsh -l
+#fi
+
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -55,5 +62,5 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 source ~/.profile
-
-. ~/dotfiles/z.sh
+#
+#. ~/dotfiles/z.sh
