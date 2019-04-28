@@ -2,7 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
-setxkbmap -option caps:ctrl_modifier
 [ -r ~/.checkOS ] && [ -f ~/.checkOS ] && source ~/.checkOS;
 
 # Path to your oh-my-zsh installation.

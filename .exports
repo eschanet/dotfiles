@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+export PATH="/Users/ericschanet/.pyenv:$PATH"
+eval "$(pyenv init -)"
 #setupATLAS
 export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 
@@ -12,6 +15,9 @@ export SETUPSCRIPTS=/project/etp5/eschanet/scripts/setupScripts
 #Bash slide creator scripts
 export PATH=$PATH:/project/etp5/eschanet/scripts/bash
 export PATH=$PATH:/project/etp5/eschanet/scripts/python
+
+#macports
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 #tutorial jan18
 export ALRB_TutorialData=/afs/cern.ch/atlas/project/PAT/tutorial/cern-jan2018
