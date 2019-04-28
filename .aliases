@@ -166,7 +166,8 @@ alias tmuxa='tmux -2 a -t main'
 alias tmuxs='tmux -2 a -t ssh'
 
 #Atlas voms proxy is a long command...
-alias voms='voms-proxy-init -voms atlas'
+alias voms='voms-proxy-init -voms atlas -valid 72:00'
+alias vomsprod='voms-proxy-init -voms atlas:/atlas/phys-susy/Role=production -valid 72:00'
 
 #alias root='root/6.10.08'
 

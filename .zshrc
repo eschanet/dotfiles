@@ -170,6 +170,10 @@ if [ -d /etc/profile.d ]; then
   unset i
 fi
 
+
+# Different autocompletion order for cd (by inverse modification date)
+zstyle ':completion:*:cd:*' file-sort modification
+
 . ~/dotfiles/z.sh
 
 # weird z.sh bug: https://github.com/robbyrussell/oh-my-zsh/issues/7094

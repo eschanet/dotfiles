@@ -18,6 +18,9 @@ export PATH=$PATH:~/ma/scripts/python
 export PATH=/home/e/Eric.Schanet/ma/packages/ahoi/scripts:$PATH
 export PATH=/home/e/Eric.Schanet/ma/packages/pfPlotter:$PATH
 export PATH=/home/e/Eric.Schanet/ma/packages/machete/python:$PATH
+export PATH=$PATH:~/ma/packages/openshift
+export PATH=/home/e/Eric.Schanet/ma/packages/cutflows:$PATH
+export PATH=/home/e/Eric.Schanet/ma/packages/yieldstables:$PATH
 
 #rucio account
 export RUCIO_ACCOUNT=eschanet
@@ -34,8 +37,11 @@ export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/MPF/pythonpath:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/studies/ml/KerasROOTClassification:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/machete/python:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/ahoi/python:$PYTHONPATH
+export PYTHONPATH=/project/etp5/eschanet/work/qualitask/panda-server/pandaserver:$PYTHONPATH
+export PYTHONPATH=/project/etp5/eschanet/work/qualitask/panda-common/pandacommon:$PYTHONPATH¬
+#export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/cutflows:$PYTHONPATH
 
-#Make vim the default editor.
+#ake vim the default editor.
 export EDITOR='vim';
 
 # Enable persistent REPL history for `node`.
