@@ -1,9 +1,13 @@
 #I want zsh
 #if [[ $- == *i* ]]
 #then
-#    exec /bin/zsh -l
+#    export SHELL=/bin/zsh
+#		exec /bin/zsh -l
 #fi
 
+
+##export SHELL=/bin/zsh
+##exec /bin/zsh -l
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

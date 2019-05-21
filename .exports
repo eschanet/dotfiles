@@ -11,7 +11,7 @@ export SETUPSCRIPTS=~/ma/scripts/setupScripts
 
 #Bash slide creator scripts
 export PATH=~/ma/packages/pandamonium:$PATH
-export PATH=~/ma/packages/slurmy:$PATH
+export PATH=~/ma/packages/slurmy/bin:$PATH
 export PATH=$PATH:~/ma/scripts/bash
 export PATH=$PATH:~/ma/scripts/python
 #export PATH=/project/etp5/eschanet/packages/miniconda3/bin:$PATH
@@ -28,6 +28,7 @@ export RUCIO_ACCOUNT=eschanet
 #PythonPath
 export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/python:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages:$PYTHONPATH
+export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/slurmy:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/meme:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/memoizePickle:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/gupf:$PYTHONPATH

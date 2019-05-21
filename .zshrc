@@ -129,7 +129,13 @@ source $ZSH/oh-my-zsh.sh
 #define all the necessary env variables as well as aliases
 if [[ "$LINUX" == "1" ]]
 then
-	for file in ~/.{path,exports,aliases,functions}; do
+  if ! [[ "$dist_info" == 'slc' ]]
+  then
+  	. /etc/profile.d/modules.sh
+  	module load root/6.10.08
+  	module load atom
+	fi
+  for file in ~/.{path,exports,aliases,functions}; do
 		[ -r "$file" ] && [ -f "$file" ] && source "$file";
 	done;
 	unset file;
