@@ -58,7 +58,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 #slc5
 if [[ "$LXPLUS" == "0" ]]
 then
-	source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+	source /project/etpsw/Common/bin/setup_image.sh
 fi
 
 #base16 colors

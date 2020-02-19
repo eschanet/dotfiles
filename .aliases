@@ -166,10 +166,17 @@ alias tmuxa='tmux -2 a -t main'
 alias tmuxs='tmux -2 a -t ssh'
 
 #Atlas voms proxy is a long command...
-alias voms='voms-proxy-init -voms atlas -valid 72:00'
-alias vomsprod='voms-proxy-init -voms atlas:/atlas/phys-susy/Role=production -valid 72:00'
+alias voms='voms-proxy-init -voms atlas -valid 240:00'
+alias vomsprod='voms-proxy-init -voms atlas:/atlas/phys-susy/Role=production -valid 240:00'
 
 #alias root='root/6.10.08'
+
+#singularity isn't that trivial sometimes
+alias newsing='source /project/etpsw/Common/bin/setup_image.sh'
+alias oldsing='source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh'
+
+#cvmfs singularity container
+alias nslc6='source /project/etpsw/Common/bin/setup_image.sh;slc6;zsh'
 
 #Setup ATLAS
 alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
@@ -190,3 +197,6 @@ alias root='root -l'
 
 #kill suspended jobs
 alias meh='kill $(jobs -l | grep suspended | cut -d'"'"' '"'"' -f4)'
+
+#search local etp db
+alias j='myLocate.sh'

@@ -132,7 +132,7 @@ then
   if ! [[ "$dist_info" == 'slc' ]]
   then
   	. /etc/profile.d/modules.sh
-  	module load root/6.10.08
+  	module load root/6.19.01
   	module load atom
 	fi
   for file in ~/.{path,exports,aliases,functions}; do
@@ -152,7 +152,7 @@ if [[ "$LINUX" == "1" ]]
 then
   if [[ "$LXPLUS" == "0" ]]
   then
-    source /project/etp3/ThomasMaier/Singularity/setup_slc6.sh
+    source /project/etpsw/Common/bin/setup_image.sh
   fi
   if [[ "$dist_info" == 'slc' ]]
   then

@@ -9,17 +9,19 @@ export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 #setup scripts
 export SETUPSCRIPTS=~/ma/scripts/setupScripts
 
-#Bash slide creator scripts
+#Bash paths
+export PATH=$HOME/bin:$PATH
+export PATH=~/ma/packages/etp_database:$PATH
 export PATH=~/ma/packages/pandamonium:$PATH
 export PATH=~/ma/packages/slurmy/bin:$PATH
-export PATH=$PATH:~/ma/scripts/bash
-export PATH=$PATH:~/ma/scripts/python
+#export PATH=$PATH:~/ma/scripts/bash
+#export PATH=$PATH:~/ma/scripts/python
 export PATH=/home/e/Eric.Schanet/.local/bin:$PATH
 #export PATH=/project/etp5/eschanet/packages/miniconda3/bin:$PATH
 export PATH=/home/e/Eric.Schanet/ma/packages/ahoi/scripts:$PATH
-export PATH=/home/e/Eric.Schanet/ma/packages/pfPlotter:$PATH
+#export PATH=/home/e/Eric.Schanet/ma/packages/pfPlotter:$PATH
 export PATH=/home/e/Eric.Schanet/ma/packages/machete/python:$PATH
-export PATH=$PATH:~/ma/packages/openshift
+#export PATH=$PATH:~/ma/packages/openshift
 export PATH=/home/e/Eric.Schanet/ma/packages/cutflows:$PATH
 export PATH=/home/e/Eric.Schanet/ma/packages/yieldstables:$PATH
 
