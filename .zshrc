@@ -131,9 +131,9 @@ if [[ "$LINUX" == "1" ]]
 then
   if ! [[ "$dist_info" == 'slc' ]]
   then
-  	. /etc/profile.d/modules.sh
-  	module load root/6.19.01
-  	module load atom
+  	source /etc/profile.d/modules.sh 2> /dev/null
+  	module load root/6.18.04 2> /dev/null
+
 	fi
   for file in ~/.{path,exports,aliases,functions}; do
 		[ -r "$file" ] && [ -f "$file" ] && source "$file";
@@ -167,14 +167,15 @@ fi
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-if [ -d /etc/profile.d ]; then
-  for i in /etc/profile.d/*.sh; do
-    if [ -r $i ]; then
-      . $i
-    fi
-  done
-  unset i
-fi
+# This is causing some errors, and I have no idea why it should be here in the first place?
+# if [ -d /etc/profile.d ]; then
+#   for i in /etc/profile.d/*.sh; do
+#     if [ -r $i ]; then
+#       . $i
+#     fi
+#   done
+#   unset i
+# fi
 
 
 # Different autocompletion order for cd (by inverse modification date)
