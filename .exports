@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# fixing duplicated command when tab to completion¬
+# https://stackoverflow.com/a/24509199/4988014¬
+export LC_ALL=en_US.UTF-8
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
