@@ -14,6 +14,7 @@ export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 export SETUPSCRIPTS=~/ma/scripts/setupScripts
 
 #Bash paths
+export PATH=/home/e/Eric.Schanet/packages/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=~/ma/packages/etp_database:$PATH
 export PATH=~/ma/packages/pandamonium:$PATH
@@ -33,6 +34,9 @@ export PATH=/home/e/Eric.Schanet/ma/packages/yieldstables:$PATH
 export RUCIO_ACCOUNT=eschanet
 
 #PythonPath
+export PYTHONPATH=/home/e/Eric.Schanet/packages:$PYTHONPATH
+#export PYTHONPATH=/home/e/Eric.Schanet/packages/lib/python2.7/site-packages:$PYTHONPATH
+#export PYTHONPATH=/home/e/Eric.Schanet/packages/lib/python3.6/site-packages:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/scripts/python:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages:$PYTHONPATH
 export PYTHONPATH=/home/e/Eric.Schanet/ma/packages/slurmy:$PYTHONPATH
