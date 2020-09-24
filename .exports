@@ -4,6 +4,21 @@
 # https://stackoverflow.com/a/24509199/4988014¬
 export LC_ALL=en_US.UTF-8
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/software/opt/bionic/x86_64/anaconda3/2019.07/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/software/opt/bionic/x86_64/anaconda3/2019.07/etc/profile.d/conda.sh" ]; then
+        . "/software/opt/bionic/x86_64/anaconda3/2019.07/etc/profile.d/conda.sh"
+    else
+        export PATH="/software/opt/bionic/x86_64/anaconda3/2019.07/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
